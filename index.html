@@ -2091,6 +2091,63 @@
       .story-step.active { transform: none; }
       .story-progress { position: static; margin-top: 20px; }
     }
+
+    /* ============================================
+       EXTRA ANIMATIONS
+       ============================================ */
+    /* Soft cards: hover lift + glow + gentle float */
+    .soft-card {
+      transition: transform .35s cubic-bezier(.2,.8,.2,1), border-color .3s ease, background .3s ease, box-shadow .3s ease;
+      animation: softFloat 6s ease-in-out infinite;
+    }
+    .soft-card:nth-child(2) { animation-delay: -1.5s; }
+    .soft-card:nth-child(3) { animation-delay: -3s; }
+    .soft-card:nth-child(4) { animation-delay: -4.5s; }
+    .soft-card:hover {
+      animation-play-state: paused;
+      transform: translateY(-8px) scale(1.015);
+      border-color: rgba(245,166,35,0.45) !important;
+      background: rgba(245,166,35,0.06) !important;
+      box-shadow: 0 20px 44px rgba(0,0,0,0.4), 0 0 0 1px rgba(245,166,35,0.15);
+    }
+    @keyframes softFloat { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-7px); } }
+
+    /* Animated sheen across section badges */
+    .section-badge { position: relative; overflow: hidden; }
+    .section-badge::after {
+      content: ''; position: absolute; top: 0; left: -70%; width: 45%; height: 100%;
+      background: linear-gradient(100deg, transparent, rgba(245,166,35,0.35), transparent);
+      transform: skewX(-20deg); animation: badgeSheen 5s ease-in-out infinite;
+    }
+    @keyframes badgeSheen { 0%, 65% { left: -70%; } 100% { left: 130%; } }
+
+    /* Brand logos infinite marquee */
+    .brand-marquee {
+      overflow: hidden;
+      -webkit-mask-image: linear-gradient(90deg, transparent, #000 7%, #000 93%, transparent);
+      mask-image: linear-gradient(90deg, transparent, #000 7%, #000 93%, transparent);
+    }
+    .brand-track { display: flex; width: max-content; animation: brandScroll 32s linear infinite; }
+    .brand-marquee:hover .brand-track { animation-play-state: paused; }
+    .brand-track > a { flex: 0 0 auto; width: 210px; margin: 0 8px; }
+    .brand-track > a:hover {
+      background: rgba(245,166,35,0.08) !important;
+      border-color: rgba(245,166,35,0.35) !important;
+      color: var(--gold) !important;
+      transform: translateY(-4px);
+    }
+    @keyframes brandScroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+    /* Glow pulse on primary CTA */
+    .hero-cta .btn-primary { animation: ctaPulse 3s ease-in-out infinite; }
+    @keyframes ctaPulse {
+      0%, 100% { box-shadow: 0 8px 24px rgba(245,166,35,0.25); }
+      50% { box-shadow: 0 8px 34px rgba(245,166,35,0.55); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .soft-card, .section-badge::after, .brand-track, .hero-cta .btn-primary { animation: none !important; }
+    }
   </style>
 </head>
 
@@ -2287,19 +2344,19 @@
             <p style="color: var(--gray-500); font-size: 18px; margin-bottom: 0; line-height: 1.6;">Kurumsal kimlikten video reklam kreatiflerine, UGC içeriklerden influencer iş birliklerine kadar görsel varlığınızı baştan tasarlıyoruz.</p>
           </div>
           <div style="flex: 1; display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
-            <div style="background: var(--gray-100); padding: 24px; border-radius: 20px;">
+            <div class="soft-card" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); padding: 24px; border-radius: 20px;">
               <strong style="color: var(--navy); display: block; margin-bottom: 8px; font-size: 16px;">Sosyal Medya Yönetimi</strong>
               <span style="color: var(--gray-500); font-size: 14px; line-height: 1.4; display: block;">Aylık içerik takvimi, topluluk yönetimi ve performans raporu.</span>
             </div>
-            <div style="background: var(--gray-100); padding: 24px; border-radius: 20px;">
+            <div class="soft-card" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); padding: 24px; border-radius: 20px;">
               <strong style="color: var(--navy); display: block; margin-bottom: 8px; font-size: 16px;">Sosyal Medya Tasarımı</strong>
               <span style="color: var(--gray-500); font-size: 14px; line-height: 1.4; display: block;">Post, story, reels kapağı ve kampanya görselleri.</span>
             </div>
-            <div style="background: var(--gray-100); padding: 24px; border-radius: 20px;">
+            <div class="soft-card" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); padding: 24px; border-radius: 20px;">
               <strong style="color: var(--navy); display: block; margin-bottom: 8px; font-size: 16px;">İçerik Üretimi & UGC</strong>
               <span style="color: var(--gray-500); font-size: 14px; line-height: 1.4; display: block;">Metin, görsel, video ve UGC koordinasyonu.</span>
             </div>
-            <div style="background: var(--gray-100); padding: 24px; border-radius: 20px;">
+            <div class="soft-card" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); padding: 24px; border-radius: 20px;">
               <strong style="color: var(--navy); display: block; margin-bottom: 8px; font-size: 16px;">Influencer & Marka Kimliği</strong>
               <span style="color: var(--gray-500); font-size: 14px; line-height: 1.4; display: block;">Influencer iş birliği ve brandbook tasarımı.</span>
             </div>
@@ -2359,7 +2416,7 @@
   <section class="section" id="hakkimizda" style="background: var(--navy); padding: 160px 0; overflow: hidden; position: relative;">
     <div class="container" style="position: relative; z-index: 2;">
       <div style="display: flex; flex-direction: column; align-items: center; text-align: center;">
-        <h2 class="bento-text-biz" style="font-size: clamp(80px, 15vw, 240px); font-weight: 900; color: transparent; -webkit-text-stroke: 2px rgba(255,255,255,0.05); line-height: 0.8; margin-bottom: -80px; text-transform: uppercase; letter-spacing: -5px; user-select: none;">BİZ KİMİZ?</h2>
+        <h2 class="bento-text-biz" data-speed="0.10" style="font-size: clamp(80px, 15vw, 240px); font-weight: 900; color: transparent; -webkit-text-stroke: 2px rgba(255,255,255,0.05); line-height: 0.8; margin-bottom: -80px; text-transform: uppercase; letter-spacing: -5px; user-select: none;">BİZ KİMİZ?</h2>
         <div style="background: var(--gold); padding: 80px 60px; border-radius: 40px; max-width: 1000px; width: 100%; position: relative; z-index: 2; box-shadow: 0 40px 100px rgba(0,0,0,0.6);">
           <h3 style="font-size: clamp(32px, 4vw, 48px); font-weight: 800; color: var(--navy); margin-bottom: 32px; letter-spacing: -1px; line-height: 1.1;">Dijital Büyümeyi<br>Kurgulayan Ekip</h3>
           <p style="font-size: 20px; color: rgba(10,22,40,0.8); line-height: 1.6; margin-bottom: 24px; max-width: 800px; margin-left: auto; margin-right: auto; font-weight: 500;">Taftri, sadece web tasarımı veya sadece reklam yapan sıradan bir ajans değil; markaların dijitaldeki tüm varlığını uçtan uca ele alan çok disiplinli uzmanlar tarafından kuruldu.</p>
@@ -3571,6 +3628,24 @@
       }, { passive: true });
       addEventListener('resize', () => { resize(); build(); });
       resize(); build(); frame();
+    })();
+
+    /* ---- Brand logos infinite marquee ---- */
+    (function () {
+      const grid = document.querySelector('.brand-grid');
+      if (!grid) return;
+      const items = [...grid.children];
+      if (!items.length) return;
+      grid.classList.add('brand-marquee');
+      grid.style.display = 'block';
+      grid.style.gridTemplateColumns = 'none';
+      grid.style.gap = '0';
+      grid.style.padding = '4px 0';
+      const track = document.createElement('div');
+      track.className = 'brand-track';
+      items.forEach(it => { it.removeAttribute('onmouseover'); it.removeAttribute('onmouseout'); track.appendChild(it); });
+      items.forEach(it => track.appendChild(it.cloneNode(true)));
+      grid.appendChild(track);
     })();
   </script>
 </body>
