@@ -1836,6 +1836,89 @@
       .g-card .gc-bars, .g-card .gc-line { height: 40px; }
       .gallery-3d { perspective: 1000px; }
     }
+
+    /* ============================================
+       ORBITING GLOW DOTS (around the 3D ring)
+       ============================================ */
+    .g-orbit {
+      position: absolute;
+      width: 1px; height: 1px;
+      transform-style: preserve-3d;
+      animation: orbitSpin 22s linear infinite;
+    }
+    @keyframes orbitSpin {
+      from { transform: rotateZ(0deg) rotateX(64deg); }
+      to   { transform: rotateZ(360deg) rotateX(64deg); }
+    }
+    .od {
+      position: absolute;
+      border-radius: 50%;
+      background: var(--gold);
+      box-shadow: 0 0 16px 3px rgba(245,166,35,0.55);
+      animation: odTwinkle 3s ease-in-out infinite;
+    }
+    @keyframes odTwinkle { 0%,100%{ opacity:.85; } 50%{ opacity:.35; } }
+
+    /* ============================================
+       FLYING CHIPS + COMETS LAYER
+       ============================================ */
+    .fly-layer {
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      overflow: hidden;
+      pointer-events: none;
+    }
+    .fly-chip {
+      position: absolute;
+      bottom: -60px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 15px;
+      border-radius: 100px;
+      font-size: 13px;
+      font-weight: 700;
+      white-space: nowrap;
+      color: var(--gold);
+      background: rgba(245,166,35,0.07);
+      border: 1px solid rgba(245,166,35,0.28);
+      box-shadow: 0 6px 24px rgba(245,166,35,0.12);
+      -webkit-backdrop-filter: blur(4px);
+      backdrop-filter: blur(4px);
+      opacity: 0;
+      will-change: transform, opacity;
+      animation: flyUp linear infinite;
+    }
+    @keyframes flyUp {
+      0%   { transform: translateY(0) translateX(0) rotate(-3deg); opacity: 0; }
+      10%  { opacity: 0.75; }
+      50%  { transform: translateY(-55vh) translateX(26px) rotate(3deg); }
+      90%  { opacity: 0.5; }
+      100% { transform: translateY(-112vh) translateX(-14px) rotate(-4deg); opacity: 0; }
+    }
+    .comet {
+      position: absolute;
+      top: -14%;
+      width: 2px;
+      height: 130px;
+      border-radius: 2px;
+      background: linear-gradient(180deg, transparent, var(--gold), transparent);
+      filter: blur(0.4px);
+      opacity: 0;
+      will-change: transform, opacity;
+      animation: cometFall linear infinite;
+    }
+    @keyframes cometFall {
+      0%   { transform: translate(0, 0) rotate(34deg); opacity: 0; }
+      8%   { opacity: 0.8; }
+      90%  { opacity: 0.5; }
+      100% { transform: translate(62vw, 126vh) rotate(34deg); opacity: 0; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .g-orbit, .od, .fly-chip, .comet { animation: none !important; }
+      .fly-layer { display: none !important; }
+    }
   </style>
 </head>
 
@@ -1853,8 +1936,12 @@
 
   <!-- 3D ROTATING GALLERY BACKGROUND -->
   <div class="gallery-3d" aria-hidden="true">
+    <div class="g-orbit" id="gOrbit"></div>
     <div class="g-ring" id="gRing"></div>
   </div>
+
+  <!-- FLYING ELEMENTS LAYER (chips + comets) -->
+  <div class="fly-layer" id="flyLayer" aria-hidden="true"></div>
 
   <!-- Drifting grid dots -->
   <div class="grid-dots"></div>
@@ -2923,6 +3010,64 @@
           '<div class="gc-sub">' + c.sub + '</div>' + viz;
         ring.appendChild(el);
       });
+
+      // Orbiting glow dots around the ring
+      const orbit = document.getElementById('gOrbit');
+      if (orbit) {
+        const dotN = isMobile ? 8 : 14;
+        for (let i = 0; i < dotN; i++) {
+          const d = document.createElement('span');
+          d.className = 'od';
+          const ang = (i / dotN) * Math.PI * 2;
+          const r = (isMobile ? 230 : 340) + (i % 3) * 26;
+          const sz = 5 + (i % 3) * 3;
+          d.style.width = sz + 'px';
+          d.style.height = sz + 'px';
+          d.style.left = Math.cos(ang) * r + 'px';
+          d.style.top = Math.sin(ang) * r + 'px';
+          d.style.animationDelay = (Math.random() * 3).toFixed(2) + 's';
+          orbit.appendChild(d);
+        }
+      }
+    })();
+
+    // ============================================
+    // FLYING CHIPS + COMETS — lively background motion
+    // ============================================
+    (function () {
+      const layer = document.getElementById('flyLayer');
+      if (!layer) return;
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+      const isMobile = window.matchMedia('(max-width: 768px)').matches;
+
+      const chips = [
+        '+340% Satış', 'ROAS 3.2x', 'ACoS %4.1', '★ Best Seller', '150+ Marka',
+        '%94 Memnuniyet', '↗ Büyüme', 'FBA Lojistik', 'PPC Optimizasyon',
+        'Amazon US · EU', '#1 Sıralama', '+210% Dönüşüm', '◆ A+ İçerik', '€ Global Pazar'
+      ];
+      const chipN = isMobile ? 8 : 14;
+      for (let i = 0; i < chipN; i++) {
+        const c = document.createElement('div');
+        c.className = 'fly-chip';
+        c.textContent = chips[i % chips.length];
+        c.style.left = (Math.random() * 88 + 2).toFixed(1) + '%';
+        c.style.fontSize = (12 + Math.random() * 4).toFixed(0) + 'px';
+        c.style.animationDuration = (16 + Math.random() * 16).toFixed(1) + 's';
+        c.style.animationDelay = (-Math.random() * 28).toFixed(1) + 's';
+        c.style.opacity = '0';
+        layer.appendChild(c);
+      }
+
+      const cometN = isMobile ? 4 : 7;
+      for (let i = 0; i < cometN; i++) {
+        const m = document.createElement('div');
+        m.className = 'comet';
+        m.style.left = (Math.random() * 60 - 10).toFixed(1) + '%';
+        m.style.height = (90 + Math.random() * 90).toFixed(0) + 'px';
+        m.style.animationDuration = (5 + Math.random() * 7).toFixed(1) + 's';
+        m.style.animationDelay = (-Math.random() * 10).toFixed(1) + 's';
+        layer.appendChild(m);
+      }
     })();
   </script>
 </body>
