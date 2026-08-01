@@ -5,16 +5,24 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description"
-    content="Taftri — 360° Dijital Pazarlama ve E-Ticaret Danışmanlık Ajansı. Amazon, Web Tasarım, Performans Pazarlama, Sosyal Medya ve Marka Yönetimi." />
+    content="Taftri — 360° Dijital Pazarlama ve E-Ticaret Danışmanlık Ajansı. Amazon, Trendyol, web tasarım, performans pazarlama, sosyal medya ve marka yönetiminde veri odaklı, ölçülebilir büyüme." />
   <meta name="keywords"
     content="Amazon danışmanlık, e-ticaret ajansı, PPC yönetimi, listing optimizasyonu, Amazon FBA, dijital pazarlama, performans pazarlama, Trendyol, Hepsiburada, marka yönetimi" />
   <meta name="author" content="Taftri" />
-  <meta name="robots" content="index, follow" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
   <meta name="theme-color" content="#0A1628" />
   <link rel="canonical" href="https://taftri.com/" />
-  <title>Taftri | 360° Dijital Büyüme Ajansı</title>
+  <title>Taftri | 360° Dijital Pazarlama & E-Ticaret Ajansı</title>
 
-  <!-- Open Graph -->
+  <!-- FAVICON — Google'da ve sekmede çıkan logo -->
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+
+  <!-- Open Graph (WhatsApp / Facebook / LinkedIn paylaşım kartı) -->
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Taftri" />
   <meta property="og:title" content="Taftri | 360° Dijital Büyüme Ajansı" />
@@ -22,18 +30,19 @@
     content="Amazon, e-ticaret ve performans pazarlamada veri odaklı, ölçülebilir büyüme. 150+ marka, %340 ortalama büyüme." />
   <meta property="og:url" content="https://taftri.com/" />
   <meta property="og:locale" content="tr_TR" />
+  <meta property="og:image" content="https://taftri.com/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Taftri — 360° Dijital Pazarlama & E-Ticaret Ajansı" />
 
-  <!-- Twitter -->
+  <!-- Twitter / X -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Taftri | 360° Dijital Büyüme Ajansı" />
   <meta name="twitter:description"
     content="Amazon, e-ticaret ve performans pazarlamada veri odaklı, ölçülebilir büyüme." />
+  <meta name="twitter:image" content="https://taftri.com/og-image.png" />
 
-  <!-- Favicon (inline SVG) -->
-  <link rel="icon"
-    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230A1628'/%3E%3Ctext x='50' y='71' font-family='Inter,Arial,sans-serif' font-size='62' font-weight='800' fill='%23F5A623' text-anchor='middle'%3Et%3C/text%3E%3C/svg%3E" />
-
-  <!-- Structured Data -->
+  <!-- Structured Data (Google için işletme bilgisi) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -41,6 +50,8 @@
     "name": "Taftri",
     "description": "360° Dijital Pazarlama ve E-Ticaret Danışmanlık Ajansı. Amazon, performans pazarlama, sosyal medya ve marka yönetimi.",
     "url": "https://taftri.com/",
+    "logo": "https://taftri.com/favicon-512.png",
+    "image": "https://taftri.com/og-image.png",
     "telephone": "+90-505-893-0811",
     "email": "info@taftri.com",
     "priceRange": "$$",
@@ -3648,6 +3659,77 @@
       grid.appendChild(track);
     })();
   </script>
+
+  <style>
+  /* --- Scroll ile yumuşak beliriş (kartlar & başlıklar) --- */
+  .tf-reveal { opacity: 0; transform: translateY(34px); }
+  .tf-reveal.tf-in {
+    opacity: 1; transform: none;
+    transition: opacity .7s cubic-bezier(.2,.8,.2,1), transform .7s cubic-bezier(.2,.8,.2,1);
+  }
+
+  /* --- .accent altın metinde ince, sürekli parıltı --- */
+  .accent {
+    background: linear-gradient(100deg, var(--gold) 0%, #FFD98A 45%, var(--gold) 60%, #FFD98A 100%);
+    background-size: 220% 100%;
+    -webkit-background-clip: text; background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: tfShimmer 6s linear infinite;
+  }
+  @keyframes tfShimmer { 0% { background-position: 220% 0; } 100% { background-position: -20% 0; } }
+
+  /* --- Menü linklerinde altın alt-çizgi animasyonu --- */
+  .nav-links > a { position: relative; }
+  .nav-links > a::after {
+    content: ''; position: absolute; left: 0; bottom: -6px;
+    width: 100%; height: 2px; background: var(--gold);
+    transform: scaleX(0); transform-origin: right;
+    transition: transform .3s cubic-bezier(.2,.8,.2,1);
+  }
+  .nav-links > a:hover::after { transform: scaleX(1); transform-origin: left; }
+
+  /* --- Marka/hizmet kutularında ince altın kenar parlaması --- */
+  .amazon-grid > div, .featured-cards > div {
+    transition: border-color .3s ease, transform .3s ease, box-shadow .3s ease;
+  }
+  .amazon-grid > div:hover, .featured-cards > div:hover {
+    transform: translateY(-4px);
+    border-color: rgba(245,166,35,0.4) !important;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .tf-reveal { opacity: 1 !important; transform: none !important; }
+    .accent { animation: none !important; }
+  }
+</style>
+
+<script>
+  /* jshint esversion: 6 */
+  (function () {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+    // Beliriş verilecek öğeler (mevcut reveal'ı ezmeden yenilerini ekliyoruz)
+    const targets = document.querySelectorAll(
+      '.bento-card, .process-card, .faq-item, .section-header, .brand-grid > a, .case-study'
+    );
+    targets.forEach(el => el.classList.add('tf-reveal'));
+
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e, i) => {
+        if (e.isIntersecting) {
+          // aynı anda görünenlere hafif kademeli gecikme
+          e.target.style.transitionDelay = Math.min(i * 60, 240) + 'ms';
+          e.target.classList.add('tf-in');
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -50px 0px' });
+
+    targets.forEach(el => io.observe(el));
+  })();
+</script>
+
 </body>
 
 </html>
