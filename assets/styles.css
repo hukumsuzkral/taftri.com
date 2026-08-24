@@ -1876,3 +1876,6 @@ html:not(.js) .curtain { display: none; }
 .yazi-kart p { margin: 0 0 var(--sp-4); color: var(--text-2); font-size: 15px; line-height: 1.6; }
 .yazi-kart__devam { display: inline-flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 700; color: var(--gold); }
 .yazi-kart__devam svg { width: 16px; height: 16px; }
+
+/* Kare logolar (ikon) biraz daha buyuk dursun */
+.partner img.partner__kare { max-width: 54px; max-height: 54px; }
