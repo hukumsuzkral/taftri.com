@@ -1157,6 +1157,30 @@ button { cursor: pointer; background: none; border: none; }
   text-align: center;
 }
 
+.form__err {
+  margin-top: var(--sp-3);
+  padding: 14px 18px;
+  border-radius: var(--r-sm);
+  border: 1px solid rgba(255, 173, 142, .4);
+  background: rgba(255, 173, 142, .10);
+  color: #FFAD8E;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+}
+.form__err a { color: inherit; text-decoration: underline; }
+
+.form__honey {
+  position: absolute !important;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.btn[aria-busy="true"] { opacity: .65; pointer-events: none; }
+
 /* ---------- Footer ---------- */
 .footer {
   position: relative;

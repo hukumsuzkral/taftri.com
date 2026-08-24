@@ -249,9 +249,45 @@
       }
 
       $$('[aria-invalid]', form).forEach(function (field) { field.removeAttribute('aria-invalid'); });
-      success.hidden = false;
-      form.reset();
-      success.focus();
+
+      var endpoint = form.getAttribute('data-endpoint');
+      var submitBtn = form.querySelector('button[type="submit"]');
+      var errBox = document.getElementById('formError');
+      if (errBox) errBox.hidden = true;
+
+      if (!endpoint) { success.hidden = false; form.reset(); success.focus(); return; }
+
+      var payload = {};
+      new FormData(form).forEach(function (value, key) { payload[key] = value; });
+      payload._subject = isEN ? 'New message from taftri.com' : 'taftri.com sitesinden yeni ileti';
+      payload._captcha = 'false';
+      payload._template = 'table';
+
+      var btnHtml = submitBtn ? submitBtn.innerHTML : '';
+      if (submitBtn) {
+        submitBtn.setAttribute('aria-busy', 'true');
+        submitBtn.textContent = isEN ? 'Sending...' : 'Gönderiliyor...';
+      }
+
+      fetch(endpoint, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify(payload)
+      }).then(function (res) {
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        return res.json();
+      }).then(function () {
+        success.hidden = false;
+        form.reset();
+        success.focus();
+      })['catch'](function () {
+        if (errBox) errBox.hidden = false;
+      }).then(function () {
+        if (submitBtn) {
+          submitBtn.removeAttribute('aria-busy');
+          submitBtn.innerHTML = btnHtml;
+        }
+      });
     });
 
     $$('input, textarea', form).forEach(function (field) {
