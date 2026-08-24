@@ -19,4 +19,58 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://taftri.com/hizmetler/shopify/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://taftri.com/hizmetler/shopify/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://taftri.com/en/services/shopify/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://taftri.com/hizmetler/shopify/" />
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://taftri.com/en/services/shopify/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://taftri.com/hizmetler/shopify/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://taftri.com/en/services/shopify/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://taftri.com/hizmetler/shopify/" />
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://taftri.com/hizmetler/amazon-pazaryeri/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://taftri.com/hizmetler/amazon-pazaryeri/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://taftri.com/en/services/amazon-marketplace/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://taftri.com/hizmetler/amazon-pazaryeri/" />
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://taftri.com/en/services/amazon-marketplace/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://taftri.com/hizmetler/amazon-pazaryeri/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://taftri.com/en/services/amazon-marketplace/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://taftri.com/hizmetler/amazon-pazaryeri/" />
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://taftri.com/hizmetler/yazilim-otomasyon/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://taftri.com/hizmetler/yazilim-otomasyon/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://taftri.com/en/services/software-automation/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://taftri.com/hizmetler/yazilim-otomasyon/" />
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://taftri.com/en/services/software-automation/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://taftri.com/hizmetler/yazilim-otomasyon/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://taftri.com/en/services/software-automation/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://taftri.com/hizmetler/yazilim-otomasyon/" />
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>

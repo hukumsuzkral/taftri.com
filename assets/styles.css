@@ -1181,6 +1181,34 @@ button { cursor: pointer; background: none; border: none; }
 
 .btn[aria-busy="true"] { opacity: .65; pointer-events: none; }
 
+/* ---------- Hizmet sayfasi ---------- */
+.svc-hero { padding-top: 148px; padding-bottom: var(--sp-6); }
+@media (max-width: 767px) { .svc-hero { padding-top: 116px; } }
+
+.crumbs { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-bottom: var(--sp-4); font-size: 13px; color: var(--text-3); }
+.crumbs li { display: flex; align-items: center; gap: 8px; list-style: none; }
+.crumbs a { color: var(--text-2); }
+.crumbs a:hover { color: var(--gold); }
+.crumbs [aria-current] { color: var(--gold); font-weight: 600; }
+.crumbs i { font-style: normal; opacity: .45; }
+
+.svc-hero h1 { max-width: 18ch; }
+.svc-hero__lead { margin-top: var(--sp-4); max-width: 62ch; color: var(--text-2); font-size: 17px; line-height: 1.65; }
+.svc-hero__cta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: var(--sp-5); }
+
+.svc__more {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: var(--sp-4);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--gold);
+  transition: gap var(--dur) var(--ease);
+}
+.svc__more svg { width: 17px; height: 17px; }
+.svc__more:hover { gap: 13px; }
+
 /* ---------- Footer ---------- */
 .footer {
   position: relative;
