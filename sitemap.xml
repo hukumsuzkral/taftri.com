@@ -17,7 +17,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://taftri.com/" />
     <lastmod>2026-08-24</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://taftri.com/hizmetler/amazon-pazaryeri/</loc>
@@ -35,7 +35,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://taftri.com/hizmetler/amazon-pazaryeri/" />
     <lastmod>2026-08-24</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://taftri.com/hizmetler/shopify/</loc>
@@ -53,7 +53,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://taftri.com/hizmetler/shopify/" />
     <lastmod>2026-08-24</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://taftri.com/hizmetler/e-ticaret-altyapi/</loc>
@@ -71,7 +71,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://taftri.com/hizmetler/e-ticaret-altyapi/" />
     <lastmod>2026-08-24</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://taftri.com/hizmetler/reklam-yonetimi/</loc>
@@ -89,7 +89,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://taftri.com/hizmetler/reklam-yonetimi/" />
     <lastmod>2026-08-24</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://taftri.com/hizmetler/web-tasarim/</loc>
@@ -107,7 +107,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://taftri.com/hizmetler/web-tasarim/" />
     <lastmod>2026-08-24</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://taftri.com/hizmetler/sosyal-medya/</loc>
@@ -125,7 +125,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://taftri.com/hizmetler/sosyal-medya/" />
     <lastmod>2026-08-24</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://taftri.com/hizmetler/veri-analiz/</loc>
@@ -143,7 +143,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://taftri.com/hizmetler/veri-analiz/" />
     <lastmod>2026-08-24</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://taftri.com/hizmetler/yazilim-otomasyon/</loc>
@@ -161,6 +161,96 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://taftri.com/hizmetler/yazilim-otomasyon/" />
     <lastmod>2026-08-24</lastmod>
     <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://taftri.com/rehber/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://taftri.com/rehber/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://taftri.com/en/guides/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://taftri.com/rehber/" />
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://taftri.com/en/guides/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://taftri.com/rehber/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://taftri.com/en/guides/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://taftri.com/rehber/" />
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://taftri.com/rehber/shopify-ikas-ticimax-karsilastirma/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://taftri.com/rehber/shopify-ikas-ticimax-karsilastirma/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://taftri.com/en/guides/shopify-vs-ikas-vs-ticimax/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://taftri.com/rehber/shopify-ikas-ticimax-karsilastirma/" />
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://taftri.com/en/guides/shopify-vs-ikas-vs-ticimax/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://taftri.com/rehber/shopify-ikas-ticimax-karsilastirma/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://taftri.com/en/guides/shopify-vs-ikas-vs-ticimax/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://taftri.com/rehber/shopify-ikas-ticimax-karsilastirma/" />
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://taftri.com/rehber/amazonda-satisa-baslamak/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://taftri.com/rehber/amazonda-satisa-baslamak/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://taftri.com/en/guides/start-selling-on-amazon/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://taftri.com/rehber/amazonda-satisa-baslamak/" />
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://taftri.com/en/guides/start-selling-on-amazon/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://taftri.com/rehber/amazonda-satisa-baslamak/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://taftri.com/en/guides/start-selling-on-amazon/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://taftri.com/rehber/amazonda-satisa-baslamak/" />
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://taftri.com/rehber/acos-nedir-kac-olmali/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://taftri.com/rehber/acos-nedir-kac-olmali/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://taftri.com/en/guides/what-is-acos/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://taftri.com/rehber/acos-nedir-kac-olmali/" />
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://taftri.com/en/guides/what-is-acos/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://taftri.com/rehber/acos-nedir-kac-olmali/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://taftri.com/en/guides/what-is-acos/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://taftri.com/rehber/acos-nedir-kac-olmali/" />
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://taftri.com/rehber/kurumsal-web-sitesi-maliyeti/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://taftri.com/rehber/kurumsal-web-sitesi-maliyeti/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://taftri.com/en/guides/corporate-website-cost/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://taftri.com/rehber/kurumsal-web-sitesi-maliyeti/" />
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://taftri.com/en/guides/corporate-website-cost/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://taftri.com/rehber/kurumsal-web-sitesi-maliyeti/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://taftri.com/en/guides/corporate-website-cost/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://taftri.com/rehber/kurumsal-web-sitesi-maliyeti/" />
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
 </urlset>

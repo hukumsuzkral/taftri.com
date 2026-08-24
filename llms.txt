@@ -38,6 +38,20 @@ danışmanlık hizmetini kapsar.
 - [Social Media & Creative](https://taftri.com/en/services/social-media/): Social media management, content production, UGC and influencer coordination, brand identity and ad creative.
 - [Data, Analytics & Reporting](https://taftri.com/en/services/data-analytics/): KPI dashboard setup, measurement audit, cohort and profitability analysis, channel attribution, weekly reporting with commentary.
 
+## Rehber yazıları (Türkçe)
+
+- [Shopify mı, İkas mı, Ticimax mi? Platform karşılaştırması](https://taftri.com/rehber/shopify-ikas-ticimax-karsilastirma/): Dört e-ticaret platformunun maliyet, entegrasyon, özelleştirme ve bakım yükü açısından karşılaştırması; hangi iş modelinde hangisinin doğru olduğu.
+- [Amazon’da satışa başlamak: gereken belgeler ve adımlar](https://taftri.com/rehber/amazonda-satisa-baslamak/): Satıcı hesabı için gereken belgeler, hesap tipi seçimi, marka kaydı, listeleme kuralları ve FBA ile kendi kargonuz arasındaki karar.
+- [ACoS nedir, kaç olmalı?](https://taftri.com/rehber/acos-nedir-kac-olmali/): ACoS ve TACoS formülleri, başabaş ACoS’un kâr marjına eşit olduğu, örnek marj hesabı ve hedef ACoS belirleme yöntemi.
+- [Kurumsal web sitesi maliyeti: fiyatı belirleyen 7 kalem](https://taftri.com/rehber/kurumsal-web-sitesi-maliyeti/): Web sitesi teklifini oluşturan yedi kalem, tekliflerde en sık atlanan gizli maliyetler ve tedarikçiye sorulacak beş soru.
+
+## Guides (English)
+
+- [Shopify vs Ikas vs Ticimax](https://taftri.com/en/guides/shopify-vs-ikas-vs-ticimax/): Comparison of four e-commerce platforms on cost, integrations, customization and maintenance, and which business model each fits.
+- [Starting to sell on Amazon](https://taftri.com/en/guides/start-selling-on-amazon/): Documents required for a seller account, account type, brand registry, listing rules and the FBA versus own-fulfilment decision.
+- [What is ACoS and what should it be?](https://taftri.com/en/guides/what-is-acos/): ACoS and TACoS formulas, why break-even ACoS equals profit margin, a worked margin example and how to set a target.
+- [Corporate website cost: the 7 items](https://taftri.com/en/guides/corporate-website-cost/): The seven items behind a website quote, the hidden costs most often omitted, and five questions to ask a supplier.
+
 ## Ana sayfalar
 
 - [Taftri ana sayfa (TR)](https://taftri.com/): Sekiz hizmetin tamamı, çalışma süreci, referans markalar ve sıkça sorulan sorular.

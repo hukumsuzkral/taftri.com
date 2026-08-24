@@ -1800,3 +1800,79 @@ html:not(.js) .curtain { display: none; }
 .partner:hover { transform: translateY(-3px); box-shadow: 0 12px 30px rgba(0, 0, 0, .28); }
 .partner img, .partner svg { width: 100%; max-width: 168px; height: auto; max-height: 46px; object-fit: contain; }
 .partners__note { margin-top: var(--sp-4); font-size: 13px; color: var(--text-3); }
+
+/* ============================================================
+   REHBER / YAZI
+   ============================================================ */
+.container--dar { max-width: 760px; }
+
+.yazi__meta { margin-top: var(--sp-3); font-size: 13px; color: var(--text-3); letter-spacing: .02em; }
+
+.yazi { color: var(--text-2); font-size: 17px; line-height: 1.75; }
+.yazi h2 { margin-top: var(--sp-6); margin-bottom: var(--sp-3); font-size: clamp(22px, 3vw, 28px); color: var(--text-1); }
+.yazi h2:first-child { margin-top: 0; }
+.yazi p { margin-bottom: var(--sp-4); }
+.yazi strong { color: var(--text-1); }
+
+.yazi__liste { margin: 0 0 var(--sp-4); padding: 0; list-style: none; }
+.yazi__liste li { position: relative; padding-left: 26px; margin-bottom: 10px; }
+.yazi__liste li::before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 12px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--gold);
+}
+
+.yazi__not {
+  margin: var(--sp-4) 0;
+  padding: 16px 20px;
+  border-left: 3px solid var(--line-gold);
+  border-radius: 0 var(--r-sm) var(--r-sm) 0;
+  background: rgba(245, 166, 35, .07);
+  color: var(--text-1);
+  font-size: 15px;
+}
+
+.yazi__tablo-kap { overflow-x: auto; margin: var(--sp-4) 0 var(--sp-5); -webkit-overflow-scrolling: touch; }
+.yazi__tablo { width: 100%; min-width: 460px; border-collapse: collapse; font-size: 15px; }
+.yazi__tablo th, .yazi__tablo td { padding: 12px 14px; text-align: left; border-bottom: 1px solid var(--line); }
+.yazi__tablo thead th { color: var(--gold); font-weight: 700; font-size: 13px; letter-spacing: .04em; text-transform: uppercase; }
+.yazi__tablo tbody th { color: var(--text-1); font-weight: 600; }
+.yazi__tablo tbody tr:last-child th, .yazi__tablo tbody tr:last-child td { border-bottom: 0; }
+
+.yazi__sss-baslik { margin-top: var(--sp-7); margin-bottom: var(--sp-4); font-size: clamp(22px, 3vw, 28px); }
+
+.yazi__cta {
+  margin-top: var(--sp-7);
+  padding: var(--sp-5);
+  border-radius: var(--r-md, 14px);
+  border: 1px solid var(--line-gold);
+  background: rgba(245, 166, 35, .06);
+  text-align: center;
+}
+.yazi__cta h2 { margin: 0 0 10px; font-size: clamp(20px, 2.6vw, 25px); }
+.yazi__cta p { margin: 0 0 var(--sp-4); color: var(--text-2); }
+
+.yazi__geri { margin-top: var(--sp-6); font-size: 15px; }
+.yazi__geri a { color: var(--text-2); }
+.yazi__geri a:hover { color: var(--gold); }
+
+.yazi-liste { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr)); gap: 18px; }
+.yazi-kart {
+  display: block;
+  padding: var(--sp-5);
+  border-radius: var(--r-md, 14px);
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, .02);
+  transition: transform var(--dur) var(--ease), border-color var(--dur) var(--ease), background-color var(--dur) var(--ease);
+}
+.yazi-kart:hover { transform: translateY(-3px); border-color: var(--line-gold); background: rgba(245, 166, 35, .05); }
+.yazi-kart__meta { display: block; margin-bottom: 12px; font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: var(--text-3); }
+.yazi-kart h2 { margin: 0 0 10px; font-size: clamp(19px, 2.4vw, 23px); color: var(--text-1); line-height: 1.32; }
+.yazi-kart p { margin: 0 0 var(--sp-4); color: var(--text-2); font-size: 15px; line-height: 1.6; }
+.yazi-kart__devam { display: inline-flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 700; color: var(--gold); }
+.yazi-kart__devam svg { width: 16px; height: 16px; }
