@@ -1751,3 +1751,31 @@ html:not(.js) .curtain { display: none; }
   .btn-primary::after, .nav__cta::after, .brand::before { display: none; }
   .has-cursor a, .has-cursor button { cursor: pointer; }
 }
+
+/* ============================================================
+   MOBIL DUZELTMELERI (olcumle bulundu, 360px)
+   ============================================================ */
+
+/* Dokunma hedefi: "Detayli incele" 25px idi, 45px oldu */
+.svc__more { padding-top: 10px; padding-bottom: 10px; margin-top: 10px; }
+
+/* Rozet yazisi 11px idi; mobil okunabilirlik esigi 12px */
+.svc__badge { font-size: 12px; }
+
+/* 360px genisliginde menu butonu 8px tasip kesiliyordu */
+@media (max-width: 420px) {
+  .nav__inner { padding-left: 16px; padding-right: 10px; gap: 12px; }
+  .nav__right { gap: 6px; }
+  .nav__right > a.icon-btn + a.icon-btn { display: none; }
+  .lang-switch a { padding: 0 10px; }
+}
+
+/* Kirinti yolu baglantilari 21px idi; dokunma hedefi 41px oldu */
+.crumbs { margin-bottom: calc(var(--sp-4) - 10px); }
+.crumbs a { padding: 10px 0; }
+
+/* 320px: 1fr izgara sutunu min-content nedeniyle 315px kaliyor, kap 286px — 12px kesiliyordu */
+@media (max-width: 480px) {
+  .contact__grid { grid-template-columns: minmax(0, 1fr); /* 320px tasma */ }
+  .form { padding-left: 16px; padding-right: 16px; }
+}
