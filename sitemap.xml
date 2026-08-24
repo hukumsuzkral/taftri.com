@@ -20,6 +20,24 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://taftri.com/hizmetler/amazon-pazaryeri/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://taftri.com/hizmetler/amazon-pazaryeri/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://taftri.com/en/services/amazon-marketplace/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://taftri.com/hizmetler/amazon-pazaryeri/" />
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://taftri.com/en/services/amazon-marketplace/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://taftri.com/hizmetler/amazon-pazaryeri/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://taftri.com/en/services/amazon-marketplace/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://taftri.com/hizmetler/amazon-pazaryeri/" />
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://taftri.com/hizmetler/shopify/</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://taftri.com/hizmetler/shopify/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://taftri.com/en/services/shopify/" />
@@ -38,19 +56,91 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://taftri.com/hizmetler/amazon-pazaryeri/</loc>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://taftri.com/hizmetler/amazon-pazaryeri/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://taftri.com/en/services/amazon-marketplace/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://taftri.com/hizmetler/amazon-pazaryeri/" />
+    <loc>https://taftri.com/hizmetler/e-ticaret-altyapi/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://taftri.com/hizmetler/e-ticaret-altyapi/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://taftri.com/en/services/ecommerce-setup/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://taftri.com/hizmetler/e-ticaret-altyapi/" />
     <lastmod>2026-08-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://taftri.com/en/services/amazon-marketplace/</loc>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://taftri.com/hizmetler/amazon-pazaryeri/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://taftri.com/en/services/amazon-marketplace/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://taftri.com/hizmetler/amazon-pazaryeri/" />
+    <loc>https://taftri.com/en/services/ecommerce-setup/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://taftri.com/hizmetler/e-ticaret-altyapi/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://taftri.com/en/services/ecommerce-setup/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://taftri.com/hizmetler/e-ticaret-altyapi/" />
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://taftri.com/hizmetler/reklam-yonetimi/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://taftri.com/hizmetler/reklam-yonetimi/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://taftri.com/en/services/ad-management/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://taftri.com/hizmetler/reklam-yonetimi/" />
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://taftri.com/en/services/ad-management/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://taftri.com/hizmetler/reklam-yonetimi/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://taftri.com/en/services/ad-management/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://taftri.com/hizmetler/reklam-yonetimi/" />
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://taftri.com/hizmetler/web-tasarim/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://taftri.com/hizmetler/web-tasarim/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://taftri.com/en/services/web-design/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://taftri.com/hizmetler/web-tasarim/" />
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://taftri.com/en/services/web-design/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://taftri.com/hizmetler/web-tasarim/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://taftri.com/en/services/web-design/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://taftri.com/hizmetler/web-tasarim/" />
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://taftri.com/hizmetler/sosyal-medya/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://taftri.com/hizmetler/sosyal-medya/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://taftri.com/en/services/social-media/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://taftri.com/hizmetler/sosyal-medya/" />
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://taftri.com/en/services/social-media/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://taftri.com/hizmetler/sosyal-medya/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://taftri.com/en/services/social-media/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://taftri.com/hizmetler/sosyal-medya/" />
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://taftri.com/hizmetler/veri-analiz/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://taftri.com/hizmetler/veri-analiz/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://taftri.com/en/services/data-analytics/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://taftri.com/hizmetler/veri-analiz/" />
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://taftri.com/en/services/data-analytics/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://taftri.com/hizmetler/veri-analiz/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://taftri.com/en/services/data-analytics/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://taftri.com/hizmetler/veri-analiz/" />
     <lastmod>2026-08-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>

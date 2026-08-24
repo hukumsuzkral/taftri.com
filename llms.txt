@@ -20,11 +20,23 @@ danışmanlık hizmetini kapsar.
 - [Amazon & Pazaryeri Yönetimi](https://taftri.com/hizmetler/amazon-pazaryeri/): Seller/Vendor Central hesap açılışı, Brand Registry, listing ve A+ içerik optimizasyonu, Sponsored Products/Brands/Display PPC yönetimi, FBA ve lojistik, Trendyol ve Hepsiburada operasyonu.
 - [Yazılım & Otomasyon](https://taftri.com/hizmetler/yazilim-otomasyon/): Özel yönetim paneli ve web uygulaması, pazaryeri/ERP/muhasebe/kargo API entegrasyonları, iş akışı ve raporlama otomasyonu, rakip fiyat takibi.
 
+- [E-Ticaret Altyapı Kurulumu](https://taftri.com/hizmetler/e-ticaret-altyapi/): Shopify, İkas, WooCommerce veya Ticimax üzerinde sıfırdan mağaza kurulumu, ürün aktarımı, ödeme ve kargo entegrasyonu, e-fatura, yasal metinler ve ölçümleme kurulumu.
+- [Reklam Yönetimi](https://taftri.com/hizmetler/reklam-yonetimi/): Google Ads (arama, alışveriş, Performance Max), Meta, TikTok ve pazaryeri reklamları; dönüşüm takibi kurulumu, yeniden pazarlama, ROAS hedefli bütçe yönetimi.
+- [Web Tasarım & Geliştirme](https://taftri.com/hizmetler/web-tasarim/): Kurumsal web sitesi, e-ticaret sitesi ve kampanya açılış sayfaları; teknik SEO temeli, çok dilli yapı, hız optimizasyonu.
+- [Sosyal Medya & Kreatif](https://taftri.com/hizmetler/sosyal-medya/): Sosyal medya yönetimi, içerik üretimi, UGC ve influencer koordinasyonu, marka kimliği ve reklam kreatifi.
+- [Veri, Analiz & Raporlama](https://taftri.com/hizmetler/veri-analiz/): KPI dashboard kurulumu, ölçümleme denetimi, kohort ve kârlılık analizi, kanal atıf analizi, haftalık yorumlu raporlama.
+
 ## Service pages (English)
 
 - [Shopify & Shopify Plus](https://taftri.com/en/services/shopify/): Store setup, migration from other platforms, theme development, custom Shopify apps, Shopify Plus checkout and B2B flows.
 - [Amazon & Marketplace Management](https://taftri.com/en/services/amazon-marketplace/): Account opening, Brand Registry, listing and A+ content optimization, PPC management, FBA and logistics.
 - [Software & Automation](https://taftri.com/en/services/software-automation/): Custom dashboards and web apps, marketplace/ERP/accounting/shipping API integrations, workflow and reporting automation.
+
+- [E-Commerce Infrastructure Setup](https://taftri.com/en/services/ecommerce-setup/): Store built from zero on Shopify, Ikas, WooCommerce or Ticimax; product migration, payment and shipping integration, e-invoicing, legal pages and measurement setup.
+- [Ad Management](https://taftri.com/en/services/ad-management/): Google Ads (Search, Shopping, Performance Max), Meta, TikTok and marketplace advertising; conversion tracking setup, remarketing, ROAS-driven budget management.
+- [Web Design & Development](https://taftri.com/en/services/web-design/): Corporate websites, e-commerce sites and campaign landing pages; technical SEO foundation, multi-language structure, speed optimization.
+- [Social Media & Creative](https://taftri.com/en/services/social-media/): Social media management, content production, UGC and influencer coordination, brand identity and ad creative.
+- [Data, Analytics & Reporting](https://taftri.com/en/services/data-analytics/): KPI dashboard setup, measurement audit, cohort and profitability analysis, channel attribution, weekly reporting with commentary.
 
 ## Ana sayfalar
 
