@@ -356,6 +356,31 @@ button { cursor: pointer; background: none; border: none; }
 .icon-btn svg { width: 19px; height: 19px; }
 .icon-btn:hover { color: var(--gold); border-color: var(--line-gold); background: rgba(245, 166, 35, .10); transform: translateY(-2px); }
 
+/* --- Dil degistirici / language switch --- */
+.lang-switch {
+  display: inline-flex;
+  align-items: stretch;
+  height: 44px;
+  border: 1px solid var(--line);
+  border-radius: var(--r-pill);
+  overflow: hidden;
+}
+.lang-switch a {
+  display: grid;
+  place-items: center;
+  padding: 0 13px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .06em;
+  color: var(--text-2);
+  transition: color var(--dur) var(--ease), background-color var(--dur) var(--ease);
+}
+.lang-switch a:hover { color: var(--gold); }
+.lang-switch a[aria-current="true"] {
+  background: rgba(245, 166, 35, .12);
+  color: var(--gold);
+}
+
 .nav__cta {
   display: inline-flex;
   align-items: center;

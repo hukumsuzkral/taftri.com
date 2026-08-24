@@ -224,6 +224,10 @@
   var form = $('#contactForm');
   var success = $('#formSuccess');
 
+  var isEN = (document.documentElement.lang || 'tr').toLowerCase().indexOf('en') === 0;
+  var MSG_INVALID = isEN ? 'Please enter a valid value.' : 'Geçerli bir değer girin.';
+  var MSG_EMPTY = isEN ? 'Please fill in this field.' : 'Bu alanı doldurun.';
+
   if (form) {
     form.addEventListener('submit', function (e) {
       e.preventDefault();
@@ -237,7 +241,7 @@
       if (invalid.length) {
         invalid.forEach(function (field) {
           var msg = document.getElementById(field.id + '-error');
-          if (msg) msg.textContent = field.value.trim() ? 'Geçerli bir değer girin.' : 'Bu alanı doldurun.';
+          if (msg) msg.textContent = field.value.trim() ? MSG_INVALID : MSG_EMPTY;
           field.setAttribute('aria-invalid', 'true');
         });
         invalid[0].focus();
@@ -255,7 +259,7 @@
         if (!field.hasAttribute('required')) return;
         var msg = document.getElementById(field.id + '-error');
         var ok = field.value.trim() && field.checkValidity();
-        if (msg) msg.textContent = ok ? '' : (field.value.trim() ? 'Geçerli bir değer girin.' : 'Bu alanı doldurun.');
+        if (msg) msg.textContent = ok ? '' : (field.value.trim() ? MSG_INVALID : MSG_EMPTY);
         if (ok) field.removeAttribute('aria-invalid');
       });
     });
