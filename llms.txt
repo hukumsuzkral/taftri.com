@@ -1,0 +1,46 @@
+# Taftri
+
+> Taftri, İstanbul merkezli 360° dijital pazarlama ve e-ticaret ajansıdır. Amazon ve pazaryeri
+> yönetimi, Shopify ve e-ticaret altyapı kurulumu, reklam yönetimi, web tasarım, sosyal medya,
+> veri analizi ve yazılım otomasyonu hizmetleri verir. 2021'den bu yana 150'den fazla markayla
+> çalışmıştır.
+
+Taftri, Zafer Mah. Yüksel Sk. No: 8B, 34197 Bahçelievler / İstanbul adresinde faaliyet gösterir.
+İletişim: info@taftri.com, +90 505 893 08 11. Site Türkçe (`/`) ve İngilizce (`/en/`) yayındadır.
+
+Hizmet kapsamı sekiz başlıkta toplanır: Amazon ve pazaryeri yönetimi, Shopify ve Shopify Plus,
+e-ticaret altyapı kurulumu, reklam yönetimi, web tasarım ve geliştirme, sosyal medya ve kreatif,
+veri analizi ve raporlama, yazılım ve otomasyon. Her hizmet tek başına da alınabilir.
+Reklam bütçesi doğrudan platforma ödenir ve müşteriye aittir; Taftri'nin ücreti yönetim ve
+danışmanlık hizmetini kapsar.
+
+## Hizmet sayfaları (Türkçe)
+
+- [Shopify & Shopify Plus](https://taftri.com/hizmetler/shopify/): Shopify mağaza kurulumu, başka platformdan geçiş, tema geliştirme, Shopify Admin API üzerinde özel uygulama geliştirme, Shopify Plus ölçeğinde checkout ve B2B akışları.
+- [Amazon & Pazaryeri Yönetimi](https://taftri.com/hizmetler/amazon-pazaryeri/): Seller/Vendor Central hesap açılışı, Brand Registry, listing ve A+ içerik optimizasyonu, Sponsored Products/Brands/Display PPC yönetimi, FBA ve lojistik, Trendyol ve Hepsiburada operasyonu.
+- [Yazılım & Otomasyon](https://taftri.com/hizmetler/yazilim-otomasyon/): Özel yönetim paneli ve web uygulaması, pazaryeri/ERP/muhasebe/kargo API entegrasyonları, iş akışı ve raporlama otomasyonu, rakip fiyat takibi.
+
+## Service pages (English)
+
+- [Shopify & Shopify Plus](https://taftri.com/en/services/shopify/): Store setup, migration from other platforms, theme development, custom Shopify apps, Shopify Plus checkout and B2B flows.
+- [Amazon & Marketplace Management](https://taftri.com/en/services/amazon-marketplace/): Account opening, Brand Registry, listing and A+ content optimization, PPC management, FBA and logistics.
+- [Software & Automation](https://taftri.com/en/services/software-automation/): Custom dashboards and web apps, marketplace/ERP/accounting/shipping API integrations, workflow and reporting automation.
+
+## Ana sayfalar
+
+- [Taftri ana sayfa (TR)](https://taftri.com/): Sekiz hizmetin tamamı, çalışma süreci, referans markalar ve sıkça sorulan sorular.
+- [Taftri homepage (EN)](https://taftri.com/en/): All eight services, working process, client brands and FAQ.
+
+## Sık sorulan sorulara verilen yanıtlar
+
+- Reklam bütçesi ücrete dahil değildir; doğrudan platforma ödenir ve müşteriye aittir.
+- İlk optimizasyon etkileri genellikle 4–6 hafta içinde görülür; kalıcı organik büyüme 2–3 aylık süreçte belirginleşir.
+- Sürdürülebilir sonuç için genellikle 3 aylık bir başlangıç dönemi önerilir.
+- Amazon satıcı hesabı tüzel kişilik ve vergi kaydı gerektirir; şahıs şirketi çoğu durumda yeterlidir.
+- Hedef ACoS ürün marjına göre belirlenir; tek bir doğru oran yoktur.
+- Shopify'a geçişte eski adresler 301 yönlendirmesiyle yeni adreslere bağlanır, SEO değeri korunur.
+
+## Optional
+
+- [robots.txt](https://taftri.com/robots.txt)
+- [sitemap.xml](https://taftri.com/sitemap.xml)
