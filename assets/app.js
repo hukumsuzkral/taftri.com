@@ -255,7 +255,7 @@
       var errBox = document.getElementById('formError');
       if (errBox) errBox.hidden = true;
 
-      if (!endpoint) { success.hidden = false; form.reset(); success.focus(); return; }
+      if (!endpoint) { success.hidden = false; form.dispatchEvent(new CustomEvent('taftri:gonderildi')); form.reset(); success.focus(); return; }
 
       var payload = {};
       new FormData(form).forEach(function (value, key) { payload[key] = value; });
@@ -278,6 +278,7 @@
         return res.json();
       }).then(function () {
         success.hidden = false;
+        form.dispatchEvent(new CustomEvent('taftri:gonderildi'));
         form.reset();
         success.focus();
       })['catch'](function () {
@@ -298,6 +299,34 @@
         if (msg) msg.textContent = ok ? '' : (field.value.trim() ? MSG_INVALID : MSG_EMPTY);
         if (ok) field.removeAttribute('aria-invalid');
       });
+    });
+  }
+
+  /* ============================================================
+     DÖNÜŞÜM OLAYLARI (GA4 + Google Ads)
+     Google Ads dönüşümü için AW_SEND_TO değerini doldurun:
+     örnek: 'AW-1234567890/AbCdEfGhIjK'. Boşken yalnızca GA4'e gönderilir.
+     ============================================================ */
+  var AW_SEND_TO = '';
+
+  function izle(olay, detay) {
+    if (typeof window.gtag !== 'function') return;
+    window.gtag('event', olay, detay || {});
+    if (AW_SEND_TO) window.gtag('event', 'conversion', { send_to: AW_SEND_TO, event_source: olay });
+  }
+
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[href]');
+    if (!a) return;
+    var href = a.getAttribute('href') || '';
+    if (href.indexOf('wa.me') !== -1) izle('contact_whatsapp', { method: 'whatsapp' });
+    else if (href.indexOf('tel:') === 0) izle('contact_phone', { method: 'phone' });
+    else if (href.indexOf('mailto:') === 0) izle('contact_email', { method: 'email' });
+  }, true);
+
+  if (form) {
+    form.addEventListener('taftri:gonderildi', function () {
+      izle('generate_lead', { method: 'form', currency: 'TRY', value: 0 });
     });
   }
 
