@@ -1779,3 +1779,24 @@ html:not(.js) .curtain { display: none; }
   .contact__grid { grid-template-columns: minmax(0, 1fr); /* 320px tasma */ }
   .form { padding-left: 16px; padding-right: 16px; }
 }
+
+/* ---------- Teknoloji ve is ortaklari ---------- */
+.partners {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  margin-top: var(--sp-6);
+}
+.partner {
+  display: grid;
+  place-items: center;
+  min-height: 104px;
+  padding: 22px 26px;
+  border-radius: var(--r-md, 14px);
+  background: #fff;
+  border: 1px solid var(--line);
+  transition: transform var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
+}
+.partner:hover { transform: translateY(-3px); box-shadow: 0 12px 30px rgba(0, 0, 0, .28); }
+.partner img, .partner svg { width: 100%; max-width: 168px; height: auto; max-height: 46px; object-fit: contain; }
+.partners__note { margin-top: var(--sp-4); font-size: 13px; color: var(--text-3); }
