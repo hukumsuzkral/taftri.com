@@ -1879,3 +1879,15 @@ html:not(.js) .curtain { display: none; }
 
 /* Kare logolar (ikon) biraz daha buyuk dursun */
 .partner img.partner__kare { max-width: 54px; max-height: 54px; }
+
+/* ---------- Kampanya banner ---------- */
+.banner-promo { padding-block: var(--sp-6); }
+.banner-promo__link {
+  display: block;
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  transition: transform var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
+  box-shadow: 0 18px 44px rgba(0, 0, 0, .35);
+}
+.banner-promo__link:hover { transform: translateY(-3px); box-shadow: 0 24px 56px rgba(0, 0, 0, .45); }
+.banner-promo__link img { display: block; width: 100%; height: auto; }
