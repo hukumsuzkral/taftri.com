@@ -73,7 +73,7 @@
         window.setTimeout(function () { el.classList.add('is-revealed'); }, delay);
         revealObserver.unobserve(el);
       });
-    }, { threshold: 0.16, rootMargin: '0px 0px -8% 0px' });
+    }, { threshold: 0.02, rootMargin: '0px 0px -2% 0px' });
 
     revealables.forEach(function (el) { revealObserver.observe(el); });
   }

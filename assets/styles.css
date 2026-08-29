@@ -1290,7 +1290,7 @@ button { cursor: pointer; background: none; border: none; }
 .js .reveal {
   opacity: 0;
   transform: translateY(26px);
-  transition: opacity var(--dur-slow) var(--ease-out), transform var(--dur-slow) var(--ease-out);
+  transition: opacity 420ms var(--ease-out), transform 420ms var(--ease-out);
 }
 .js .reveal.is-revealed { opacity: 1; transform: none; }
 
