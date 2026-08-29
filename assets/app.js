@@ -342,8 +342,9 @@
 
   /* ---------- Açılış perdesi ---------- */
   var curtain = $('#curtain');
+  var isMobileWidth = window.matchMedia('(max-width: 767px)').matches;
   if (curtain) {
-    if (reduceMotion) {
+    if (reduceMotion || isMobileWidth) {
       curtain.remove();
     } else {
       var hideCurtain = function () {

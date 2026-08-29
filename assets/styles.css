@@ -1386,6 +1386,10 @@ button { cursor: pointer; background: none; border: none; }
 .curtain.is-done { opacity: 0; visibility: hidden; }
 html:not(.js) .curtain { display: none; }
 
+/* Mobilde acilis perdesi kaldirildi: kucuk ekranda ilk icerik gorunmeden once
+   gereksiz bekleme/yukleme hissi yaratiyordu. */
+@media (max-width: 767px) { .curtain { display: none; } }
+
 .curtain__logo {
   font-size: clamp(34px, 6vw, 56px);
   font-weight: 800;
