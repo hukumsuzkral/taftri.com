@@ -2009,6 +2009,11 @@ html:not(.js) .curtain { display: none; }
 /* ---------- Kampanya banner ---------- */
 .banner-promo { padding-block: var(--sp-6); }
 
+/* Banner sayfanin en ustunde: nav position:fixed oldugu icin ust boslugu hero'dan
+   devraliyor; hero ikinci siraya dustugu icin ust boslugu azaltiliyor. */
+.banner-promo--ust { padding-top: clamp(120px, 15vh, 176px); padding-bottom: var(--sp-6); }
+.hero--banner-var { padding-top: clamp(24px, 4vw, 56px); }
+
 .banner-promo__mobile { display: none; }
 
 .banner-promo__link {
