@@ -2011,7 +2011,7 @@ html:not(.js) .curtain { display: none; }
 
 /* Banner sayfanin en ustunde: nav position:fixed oldugu icin ust boslugu hero'dan
    devraliyor; hero ikinci siraya dustugu icin ust boslugu azaltiliyor. */
-.banner-promo--ust { padding-top: clamp(120px, 15vh, 176px); padding-bottom: var(--sp-6); }
+.banner-promo--ust { padding-top: clamp(164px, 20vh, 216px); padding-bottom: var(--sp-6); }
 .hero--banner-var { padding-top: clamp(24px, 4vw, 56px); }
 
 .banner-promo__mobile { display: none; }
