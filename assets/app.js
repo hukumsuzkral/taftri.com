@@ -259,6 +259,8 @@
 
       var payload = {};
       new FormData(form).forEach(function (value, key) { payload[key] = value; });
+      // Talebin hangi sayfadan geldigi: atif icin gizli kaynak alani.
+      payload.kaynak = location.pathname + location.search;
       payload._subject = isEN ? 'New message from taftri.com' : 'taftri.com sitesinden yeni ileti';
       payload._captcha = 'false';
       payload._template = 'table';
