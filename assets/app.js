@@ -304,6 +304,99 @@
     });
   }
 
+  /* ---------- Rehber kursun miknatisi: e-posta karsiligi belge ----------
+     Belge linki e-postayla gider (formsubmit _autoresponse). Ekranda link
+     gosterilmez; boylece adres gercekten dogrulanmis olur. */
+  $$('.kmagnet__form').forEach(function (kform) {
+    kform.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      var kutu = kform.closest('.kmagnet');
+      var alan = kform.querySelector('input[type="email"]');
+      var okKutu = kutu ? kutu.querySelector('.kmagnet__ok') : null;
+      var hataKutu = kutu ? kutu.querySelector('.kmagnet__hata') : null;
+      var btn = kform.querySelector('button[type="submit"]');
+
+      if (hataKutu) hataKutu.hidden = true;
+
+      if (!alan.value.trim() || !alan.checkValidity()) {
+        alan.setAttribute('aria-invalid', 'true');
+        alan.focus();
+        if (hataKutu) {
+          hataKutu.textContent = alan.value.trim() ? MSG_INVALID : MSG_EMPTY;
+          hataKutu.hidden = false;
+        }
+        return;
+      }
+      alan.removeAttribute('aria-invalid');
+
+      var endpoint = kform.getAttribute('data-endpoint');
+      var belge = kform.getAttribute('data-belge');
+      var belgeAdi = kform.getAttribute('data-belge-adi') || 'Rehber belgesi';
+      var link = location.origin + '/assets/rehber/' + belge + '.pdf';
+
+      var payload = {};
+      new FormData(kform).forEach(function (value, key) { payload[key] = value; });
+      payload.belge = belgeAdi;
+      payload.kaynak = location.pathname + location.search;
+      payload._subject = (isEN ? 'Guide download request: ' : 'Rehber belgesi talebi: ') + belgeAdi;
+      payload._autoresponse = (isEN ? [
+        'Hello,',
+        '',
+        'You can download "' + belgeAdi + '" here:',
+        link,
+        '',
+        'If you would like help applying it, book a free strategy call:',
+        location.origin + '/en/#contact',
+        '',
+        'Taftri'
+      ] : [
+        'Merhaba,',
+        '',
+        '"' + belgeAdi + '" belgesini buradan indirebilirsiniz:',
+        link,
+        '',
+        'Listeyi birlikte uygulamak isterseniz ucretsiz strateji gorusmesi icin:',
+        location.origin + '/#iletisim',
+        '',
+        'Taftri'
+      ]).join('\n');
+      payload._captcha = 'false';
+      payload._template = 'table';
+
+      var btnHtml = btn ? btn.innerHTML : '';
+      if (btn) {
+        btn.setAttribute('aria-busy', 'true');
+        btn.textContent = isEN ? 'Sending...' : 'Gonderiliyor...';
+      }
+
+      fetch(endpoint, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify(payload)
+      }).then(function (res) {
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        return res.json();
+      }).then(function () {
+        kform.hidden = true;
+        if (okKutu) { okKutu.hidden = false; okKutu.focus(); }
+        izle('generate_lead', { method: 'kursun_miknatisi', item_name: belgeAdi });
+      })['catch'](function () {
+        if (hataKutu) {
+          hataKutu.textContent = isEN
+            ? 'Could not send. Please try again or reach us on WhatsApp.'
+            : 'Gonderilemedi. Tekrar deneyin ya da WhatsApp uzerinden yazin.';
+          hataKutu.hidden = false;
+        }
+      }).then(function () {
+        if (btn) {
+          btn.removeAttribute('aria-busy');
+          btn.innerHTML = btnHtml;
+        }
+      });
+    });
+  });
+
   /* ============================================================
      DÖNÜŞÜM OLAYLARI (GA4 + Google Ads)
      Google Ads dönüşümü için AW_SEND_TO değerini doldurun:
