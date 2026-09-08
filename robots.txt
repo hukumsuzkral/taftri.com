@@ -1,4 +1,8 @@
 User-agent: *
 Allow: /
 
+# Rehber belgeleri e-posta karsiligi veriliyor; aramada dogrudan
+# bulunmamasi icin taranmiyor.
+Disallow: /assets/rehber/
+
 Sitemap: https://taftri.com/sitemap.xml
