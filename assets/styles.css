@@ -1920,13 +1920,18 @@ html:not(.js) .curtain { display: none; }
 }
 
 /* ---------- Teknoloji ve is ortaklari ---------- */
+/* Esnek dizim: kart sayisi sutun sayisina bolunmedginde son satir ortalanir.
+   Izgarada 7 kart 6+1 diziliyordu, ikinci satirda tek kart kaliyordu. */
 .partners {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 16px;
   margin-top: var(--sp-6);
 }
 .partner {
+  flex: 1 1 180px;
+  max-width: 235px;
   display: grid;
   place-items: center;
   min-height: 104px;
