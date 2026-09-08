@@ -43,6 +43,19 @@
   var progress = $('#progress');
   var backTop = $('#backTop');
 
+  /* Yuzen butonlar banner CTA'sinin uzerine binmemeli: 360px'te 29x24 px olculdu. */
+  var floats = $('.floats');
+  var bannerCta = $('.banner-promo__cta');
+
+  function floatCakisma() {
+    if (!floats || !bannerCta) return;
+    var f = floats.getBoundingClientRect();
+    var c = bannerCta.getBoundingClientRect();
+    var kesisiyor = f.left < c.right && f.right > c.left &&
+                    f.top < c.bottom && f.bottom > c.top;
+    floats.classList.toggle('floats--gizli', kesisiyor);
+  }
+
   function onScroll() {
     var doc = document.documentElement;
     var max = doc.scrollHeight - doc.clientHeight;
@@ -50,6 +63,7 @@
     progress.style.width = pct + '%';
     backTop.classList.toggle('is-visible', window.scrollY > 600);
     onScrollNav();
+    floatCakisma();
   }
 
   backTop.addEventListener('click', function () {
@@ -57,6 +71,7 @@
   });
 
   window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', floatCakisma, { passive: true });
   onScroll();
 
   /* ---------- Reveal on scroll ---------- */
@@ -305,8 +320,8 @@
   }
 
   /* ---------- Rehber kursun miknatisi: e-posta karsiligi belge ----------
-     Belge linki e-postayla gider (formsubmit _autoresponse). Ekranda link
-     gosterilmez; boylece adres gercekten dogrulanmis olur. */
+     Lead info@taftri.com'a dusuyor; belge gonderim sonrasi ayni sayfada
+     indirtiliyor. Otomatik yanit yolu kapali (bkz. asagidaki not). */
   $$('.kmagnet__form').forEach(function (kform) {
     kform.addEventListener('submit', function (e) {
       e.preventDefault();
@@ -340,34 +355,16 @@
       payload.belge = belgeAdi;
       payload.kaynak = location.pathname + location.search;
       payload._subject = (isEN ? 'Guide download request: ' : 'Rehber belgesi talebi: ') + belgeAdi;
-      payload._autoresponse = (isEN ? [
-        'Hello,',
-        '',
-        'You can download "' + belgeAdi + '" here:',
-        link,
-        '',
-        'If you would like help applying it, book a free strategy call:',
-        location.origin + '/en/#contact',
-        '',
-        'Taftri'
-      ] : [
-        'Merhaba,',
-        '',
-        '"' + belgeAdi + '" belgesini buradan indirebilirsiniz:',
-        link,
-        '',
-        'Listeyi birlikte uygulamak isterseniz ucretsiz strateji gorusmesi icin:',
-        location.origin + '/#iletisim',
-        '',
-        'Taftri'
-      ]).join('\n');
+      /* _autoresponse burada ise yaramaz: FormSubmit otomatik yaniti AJAX ile
+         gonderilen ve reCAPTCHA'si kapali formlarda calistirmiyor. Belge bu
+         yuzden gonderim sonrasi dogrudan sayfada indirtiliyor. */
       payload._captcha = 'false';
       payload._template = 'table';
 
       var btnHtml = btn ? btn.innerHTML : '';
       if (btn) {
         btn.setAttribute('aria-busy', 'true');
-        btn.textContent = isEN ? 'Sending...' : 'Gonderiliyor...';
+        btn.textContent = isEN ? 'Sending...' : 'Gönderiliyor...';
       }
 
       fetch(endpoint, {
@@ -379,13 +376,31 @@
         return res.json();
       }).then(function () {
         kform.hidden = true;
-        if (okKutu) { okKutu.hidden = false; okKutu.focus(); }
+        if (okKutu) {
+          okKutu.textContent = isEN
+            ? 'Thanks. Your document is ready below — we received your request too.'
+            : 'Teşekkürler. Belgeniz aşağıda hazır; talebiniz bize de ulaştı.';
+          okKutu.hidden = false;
+
+          if (!kutu.querySelector('.kmagnet__indir')) {
+            var indir = document.createElement('a');
+            indir.className = 'btn btn-primary btn-full kmagnet__indir';
+            indir.href = link;
+            indir.setAttribute('download', '');
+            indir.setAttribute('target', '_blank');
+            indir.setAttribute('rel', 'noopener');
+            indir.textContent = isEN ? 'Download the PDF' : 'PDF belgeyi indir';
+            okKutu.parentNode.insertBefore(indir, okKutu.nextSibling);
+          }
+
+          okKutu.focus();
+        }
         izle('generate_lead', { method: 'kursun_miknatisi', item_name: belgeAdi });
       })['catch'](function () {
         if (hataKutu) {
           hataKutu.textContent = isEN
             ? 'Could not send. Please try again or reach us on WhatsApp.'
-            : 'Gonderilemedi. Tekrar deneyin ya da WhatsApp uzerinden yazin.';
+            : 'Gönderilemedi. Tekrar deneyin ya da WhatsApp üzerinden yazın.';
           hataKutu.hidden = false;
         }
       }).then(function () {

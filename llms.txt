@@ -24,6 +24,8 @@ danışmanlık hizmetini kapsar.
 - [Reklam Yönetimi](https://taftri.com/hizmetler/reklam-yonetimi/): Google Ads (arama, alışveriş, Performance Max), Meta, TikTok ve pazaryeri reklamları; dönüşüm takibi kurulumu, yeniden pazarlama, ROAS hedefli bütçe yönetimi.
 - [Web Tasarım & Geliştirme](https://taftri.com/hizmetler/web-tasarim/): Kurumsal web sitesi, e-ticaret sitesi ve kampanya açılış sayfaları; teknik SEO temeli, çok dilli yapı, hız optimizasyonu.
 - [Sosyal Medya & Kreatif](https://taftri.com/hizmetler/sosyal-medya/): Sosyal medya yönetimi, içerik üretimi, UGC ve influencer koordinasyonu, marka kimliği ve reklam kreatifi.
+- [SEO](https://taftri.com/hizmetler/seo/): Teknik SEO denetimi, site hızı ve Core Web Vitals, anahtar kelime ve içerik haritası, yapısal veri, çok dilli hreflang kurulumu, yerel SEO.
+- [E-Ticaret Paketleri](https://taftri.com/hizmetler/e-ticaret-paketleri/): Kurulumdan yönetime kadar paket kapsamları, hangi ölçekteki markaya hangi paketin uyduğu ve pakete dahil olan işler.
 - [Veri, Analiz & Raporlama](https://taftri.com/hizmetler/veri-analiz/): KPI dashboard kurulumu, ölçümleme denetimi, kohort ve kârlılık analizi, kanal atıf analizi, haftalık yorumlu raporlama.
 
 ## Service pages (English)
@@ -44,6 +46,15 @@ danışmanlık hizmetini kapsar.
 - [Amazon’da satışa başlamak: gereken belgeler ve adımlar](https://taftri.com/rehber/amazonda-satisa-baslamak/): Satıcı hesabı için gereken belgeler, hesap tipi seçimi, marka kaydı, listeleme kuralları ve FBA ile kendi kargonuz arasındaki karar.
 - [ACoS nedir, kaç olmalı?](https://taftri.com/rehber/acos-nedir-kac-olmali/): ACoS ve TACoS formülleri, başabaş ACoS’un kâr marjına eşit olduğu, örnek marj hesabı ve hedef ACoS belirleme yöntemi.
 - [Kurumsal web sitesi maliyeti: fiyatı belirleyen 7 kalem](https://taftri.com/rehber/kurumsal-web-sitesi-maliyeti/): Web sitesi teklifini oluşturan yedi kalem, tekliflerde en sık atlanan gizli maliyetler ve tedarikçiye sorulacak beş soru.
+
+## Ücretsiz belgeler (PDF)
+
+Rehber sayfalarındaki kutudan e-posta karşılığı gönderilir; belge doğrudan indirilebilir bir PDF'tir.
+
+- [Amazon’da satışa başlama kontrol listesi](https://taftri.com/assets/rehber/taftri-amazon-satis-kontrol-listesi.pdf): Hesap belgelerinden ilk reklama kadar 7 bölüm, 27 madde.
+- [E-ticaret platformu geçiş kontrol listesi](https://taftri.com/assets/rehber/taftri-platform-gecis-kontrol-listesi.pdf): Platform değiştirirken veri, URL ve entegrasyon tarafında yapılacaklar.
+- [Web sitesi teklif karşılaştırma çizelgesi](https://taftri.com/assets/rehber/taftri-web-sitesi-teklif-cizelgesi.pdf): Yedi kalem ve sık atlanan gizli maliyetler; teklifleri kıyaslanabilir hâle getirir.
+- [ACoS hedef hesap çizelgesi](https://taftri.com/assets/rehber/taftri-acos-hesap-cizelgesi.pdf): Ürün başına marj hesabı, başabaş ACoS ve haftalık ACoS/TACoS takibi.
 
 ## Guides (English)
 

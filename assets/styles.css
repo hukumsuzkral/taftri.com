@@ -1389,6 +1389,15 @@ button { cursor: pointer; background: none; border: none; }
   gap: 12px;
 }
 
+/* Banner CTA'sının üstüne binerse gizlenir (bkz. app.js floatCakisma) */
+.floats { transition: opacity .22s ease, transform .22s ease, visibility .22s; }
+.floats--gizli {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px) scale(.94);
+  pointer-events: none;
+}
+
 .float {
   width: 54px; height: 54px;
   border-radius: 50%;
@@ -2018,6 +2027,7 @@ html:not(.js) .curtain { display: none; }
 .kmagnet__form .field { margin-bottom: 0; }
 .kmagnet__honey { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
 .kmagnet__kvkk { font-size: 12.5px; color: var(--text-3); line-height: 1.45; }
+.kmagnet__indir { margin-top: 14px; }
 .kmagnet__ok,
 .kmagnet__hata {
   margin-top: 12px;
