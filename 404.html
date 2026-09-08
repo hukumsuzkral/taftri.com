@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, follow" />
+  <meta name="theme-color" content="#0A1628" />
+  <meta name="description" content="Aradığınız sayfa bulunamadı. Taftri hizmetleri, rehber yazıları ve iletişim bağlantıları bu sayfada." />
+  <title>Sayfa bulunamadı | Taftri</title>
+
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+
+  <link rel="preload" href="/assets/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/styles.css" />
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SJNPQT5RP0"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-SJNPQT5RP0');
+  </script>
+  <!-- Microsoft Clarity -->
+  <script>
+    (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ycgdys5bam");
+  </script>
+
+  <style>
+    .hata {
+      min-height: 100vh;
+      min-height: 100dvh;
+      display: grid;
+      place-items: center;
+      padding: 48px 0;
+    }
+    .hata__ic { max-width: 640px; margin: 0 auto; text-align: center; }
+    .hata__kod {
+      font-size: clamp(64px, 16vw, 132px);
+      font-weight: 800;
+      line-height: 1;
+      letter-spacing: -.04em;
+      background: linear-gradient(120deg, var(--gold), var(--gold-lt));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      margin: 0 0 8px;
+    }
+    .hata__baslik { font-size: clamp(24px, 5vw, 34px); margin: 0 0 12px; }
+    .hata__metin { color: var(--text-2); margin: 0 0 28px; line-height: 1.6; }
+    .hata__butonlar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+    .hata__linkler {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 22px;
+      justify-content: center;
+      font-size: 14.5px;
+    }
+    .hata__linkler a { color: var(--text-3); }
+    .hata__linkler a:hover { color: var(--gold-lt); }
+    .hata__marka {
+      display: inline-block;
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: -.02em;
+      margin-bottom: 26px;
+      color: var(--text);
+    }
+    .hata__marka span { color: var(--gold); }
+  </style>
+</head>
+
+<body>
+
+  <main class="hata">
+    <div class="container">
+      <div class="hata__ic">
+        <a class="hata__marka" href="/">taf<span>tri</span></a>
+
+        <p class="hata__kod">404</p>
+        <h1 class="hata__baslik">Bu sayfa bulunamadı</h1>
+        <p class="hata__metin">
+          Adres değişmiş, yazım hatası olmuş ya da sayfa kaldırılmış olabilir.
+          Aşağıdaki bağlantılardan devam edebilirsiniz.
+        </p>
+
+        <div class="hata__butonlar">
+          <a href="/" class="btn btn-primary magnetic">Ana sayfa</a>
+          <a href="/#iletisim" class="btn btn-ghost magnetic">İletişime geç</a>
+        </div>
+
+        <nav class="hata__linkler" aria-label="Site bölümleri">
+          <a href="/#hizmetler">Hizmetler</a>
+          <a href="/rehber/">Rehber</a>
+          <a href="/hizmetler/e-ticaret-paketleri/">E-ticaret paketleri</a>
+          <a href="/hizmetler/seo/">SEO</a>
+          <a href="/en/">English</a>
+        </nav>
+      </div>
+    </div>
+  </main>
+
+  <!-- app.js burada yuklenmez: navigasyon, ilerleme cubugu ve yukari-cik
+       ogeleri bu sayfada yok, betik onlarda takiliyor. Sayfanin JS ihtiyaci yok. -->
+</body>
+
+</html>

@@ -49,12 +49,13 @@ danışmanlık hizmetini kapsar.
 
 ## Ücretsiz belgeler (PDF)
 
-Rehber sayfalarındaki kutudan e-posta karşılığı gönderilir; belge doğrudan indirilebilir bir PDF'tir.
+Her belge ilgili rehber sayfasındaki kutudan e-posta karşılığı verilir; dosyaların kendisi
+taramaya kapalıdır (robots.txt), indirme bağlantısı gönderim sonrası sayfada açılır.
 
-- [Amazon’da satışa başlama kontrol listesi](https://taftri.com/assets/rehber/taftri-amazon-satis-kontrol-listesi.pdf): Hesap belgelerinden ilk reklama kadar 7 bölüm, 27 madde.
-- [E-ticaret platformu geçiş kontrol listesi](https://taftri.com/assets/rehber/taftri-platform-gecis-kontrol-listesi.pdf): Platform değiştirirken veri, URL ve entegrasyon tarafında yapılacaklar.
-- [Web sitesi teklif karşılaştırma çizelgesi](https://taftri.com/assets/rehber/taftri-web-sitesi-teklif-cizelgesi.pdf): Yedi kalem ve sık atlanan gizli maliyetler; teklifleri kıyaslanabilir hâle getirir.
-- [ACoS hedef hesap çizelgesi](https://taftri.com/assets/rehber/taftri-acos-hesap-cizelgesi.pdf): Ürün başına marj hesabı, başabaş ACoS ve haftalık ACoS/TACoS takibi.
+- Amazon’da satışa başlama kontrol listesi — 7 bölüm, 27 madde, 2 sayfa PDF. Sayfası: https://taftri.com/rehber/amazonda-satisa-baslamak/
+- E-ticaret platformu geçiş kontrol listesi — platform değiştirirken veri, adres ve entegrasyon tarafında yapılacaklar. Sayfası: https://taftri.com/rehber/shopify-ikas-ticimax-karsilastirma/
+- Web sitesi teklif karşılaştırma çizelgesi — yedi kalem ve sık atlanan gizli maliyetler. Sayfası: https://taftri.com/rehber/kurumsal-web-sitesi-maliyeti/
+- ACoS hedef hesap çizelgesi — ürün başına marj hesabı, başabaş ACoS ve haftalık ACoS/TACoS takibi. Sayfası: https://taftri.com/rehber/acos-nedir-kac-olmali/
 
 ## Guides (English)
 

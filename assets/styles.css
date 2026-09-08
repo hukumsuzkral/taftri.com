@@ -322,6 +322,10 @@ button { cursor: pointer; background: none; border: none; }
 .btn svg { width: 18px; height: 18px; flex: none; }
 
 .btn-primary {
+  /* Parlama supurmesi (::after) disari tasmasin: 'magnetic' sinifi olmayan
+     butonlarda kaydirilmis dikdortgen butonun soluna dusuyordu. */
+  position: relative;
+  overflow: hidden;
   background: var(--grad-gold);
   color: var(--navy);
   box-shadow: var(--shadow-gold);
