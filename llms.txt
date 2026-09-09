@@ -68,6 +68,17 @@ taramaya kapalıdır (robots.txt), indirme bağlantısı gönderim sonrası sayf
 - [Site hızı nasıl artırılır?](https://taftri.com/rehber/site-hizi-nasil-artirilir/): LCP, INP ve CLS neye bakar; en çok kazandıran düzeltmeler hangi sırayla yapılır.
 - [ROAS nedir, nasıl hesaplanır?](https://taftri.com/rehber/roas-nedir-nasil-hesaplanir/): Başabaş ROAS marjın tersidir. Yüksek ROAS'ın neden her zaman iyi olmadığı.
 
+- [Web sitesi nasıl yapılır? Süreç adım adım](https://taftri.com/rehber/web-sitesi-nasil-yapilir/): Brief'ten yayına altı adım, her adımda kimin ne yaptığı ve süreci uzatan gerçek sebep.
+- [Web tasarım ajansı nasıl seçilir?](https://taftri.com/rehber/web-tasarim-ajansi-nasil-secilir/): Teklifi karşılaştırılabilir yapan yedi kalem, sorulacak beş soru ve uyarı işaretleri.
+- [Hazır tema mı, özel tasarım mı?](https://taftri.com/rehber/hazir-tema-mi-ozel-tasarim-mi/): Maliyet, hız, performans ve bakım yükü karşılaştırması; kırılma noktası nerede.
+- [Web sitesi işletmeye ne kazandırır?](https://taftri.com/rehber/web-sitesi-isletmeye-ne-kazandirir/): Sosyal medya varken site neden gerekli: arama, güven, ölçüm ve sahiplik.
+- [Web sitesi tasarımında sık yapılan hatalar](https://taftri.com/rehber/web-sitesi-tasarim-hatalari/): Ziyaretçiyi kaybettiren yedi hata ve düzeltmesi en ucuz olanlar.
+- [Mobil uyumlu web tasarım nedir?](https://taftri.com/rehber/mobil-uyumlu-web-tasarim/): Mobil öncelikli kurulum, mobilde bozulan yerler ve nasıl test edilir.
+- [Çok dilli web sitesi nasıl kurulur?](https://taftri.com/rehber/cok-dilli-web-sitesi/): Adres yapısı seçenekleri, hreflang karşılıklılığı ve yerelleştirme farkı.
+- [E-ticarette ne satılır? Ürün seçimi](https://taftri.com/rehber/e-ticarette-ne-satilir/): Marj, kargo, iade, rekabet ve tekrar satın alma: altı ölçütle ürün seçimi.
+- [E-ticarette satış nasıl artırılır?](https://taftri.com/rehber/e-ticarette-satis-artirma/): Trafiği artırmadan satışı yükselten altı başlık: ürün sayfası, sepet, geri kazanım.
+- [Google İşletme Profili nedir, nasıl kullanılır?](https://taftri.com/rehber/google-isletme-profili/): Harita sıralamasını belirleyen üç etken ve profili güçlendiren adımlar.
+
 ## Guides (English)
 
 - [Shopify vs Ikas vs Ticimax](https://taftri.com/en/guides/shopify-vs-ikas-vs-ticimax/): Comparison of four e-commerce platforms on cost, integrations, customization and maintenance, and which business model each fits.
