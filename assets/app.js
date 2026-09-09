@@ -194,8 +194,13 @@
 
   /* ---------- Nav scrollspy ---------- */
   var navLinks = $$('a[data-spy]', menu);
+  /* Menude capa olmayan adres de bulunabilir (/referanslar/ gibi);
+     querySelector'a verilirse hata firlatir, o yuzden once eleniyor. */
   var sections = navLinks
-    .map(function (link) { return document.querySelector(link.getAttribute('href')); })
+    .map(function (link) {
+      var h = link.getAttribute('href') || '';
+      return h.charAt(0) === '#' && h.length > 1 ? document.querySelector(h) : null;
+    })
     .filter(Boolean);
 
   if (sections.length && 'IntersectionObserver' in window) {
@@ -449,22 +454,6 @@
      ============================================================ */
 
   var finePointer = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
-
-  /* ---------- Açılış perdesi ---------- */
-  var curtain = $('#curtain');
-  var isMobileWidth = window.matchMedia('(max-width: 767px)').matches;
-  if (curtain) {
-    if (reduceMotion || isMobileWidth) {
-      curtain.remove();
-    } else {
-      var hideCurtain = function () {
-        curtain.classList.add('is-done');
-        window.setTimeout(function () { curtain.remove(); }, 700);
-      };
-      window.addEventListener('load', function () { window.setTimeout(hideCurtain, 620); });
-      window.setTimeout(hideCurtain, 2600);
-    }
-  }
 
   /* ---------- Başlıkları kelimelere böl ---------- */
   function splitWords(root) {

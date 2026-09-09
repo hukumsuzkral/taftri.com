@@ -1508,62 +1508,6 @@ button { cursor: pointer; background: none; border: none; }
    MOTION LAYER — hover, imleç, parallax, kelime açılımı
    ============================================================ */
 
-/* ---------- Açılış perdesi ---------- */
-.curtain {
-  position: fixed;
-  inset: 0;
-  z-index: 300;
-  display: grid;
-  place-items: center;
-  background: var(--bg);
-  transition: opacity 600ms var(--ease), visibility 600ms;
-}
-.curtain.is-done { opacity: 0; visibility: hidden; }
-html:not(.js) .curtain { display: none; }
-
-/* Mobilde acilis perdesi kaldirildi: kucuk ekranda ilk icerik gorunmeden once
-   gereksiz bekleme/yukleme hissi yaratiyordu. */
-@media (max-width: 767px) { .curtain { display: none; } }
-
-.curtain__logo {
-  font-size: clamp(34px, 6vw, 56px);
-  font-weight: 800;
-  letter-spacing: -.05em;
-  color: var(--text);
-  opacity: 0;
-  animation: curtainIn 900ms var(--ease-out) forwards;
-}
-.curtain__logo span { color: var(--gold); }
-
-.curtain__bar {
-  position: absolute;
-  bottom: 22%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: min(220px, 46vw);
-  height: 2px;
-  border-radius: 2px;
-  background: rgba(255, 255, 255, .12);
-  overflow: hidden;
-}
-.curtain__bar::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  border-radius: inherit;
-  background: var(--grad-gold);
-  transform: translateX(-100%);
-  animation: curtainBar 1100ms var(--ease-out) forwards;
-}
-
-@keyframes curtainIn {
-  from { opacity: 0; transform: translateY(14px) scale(.96); filter: blur(6px); }
-  to { opacity: 1; transform: none; filter: none; }
-}
-@keyframes curtainBar {
-  to { transform: translateX(0); }
-}
-
 /* ---------- Özel imleç ---------- */
 .cursor,
 .cursor__dot {
@@ -1883,7 +1827,6 @@ html:not(.js) .curtain { display: none; }
   .atmos__grain { display: none; }
   .panel { animation: none; }
   .gold-text { animation: none; background-size: 100% 100%; }
-  .curtain { display: none; }
   .cursor, .cursor__dot { display: none; }
   .timeline.is-revealed::after { width: 94%; }
   .float--wa::after { animation: none; opacity: 0; }
