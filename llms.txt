@@ -78,6 +78,12 @@ taramaya kapalıdır (robots.txt), indirme bağlantısı gönderim sonrası sayf
 - Hedef ACoS ürün marjına göre belirlenir; tek bir doğru oran yoktur.
 - Shopify'a geçişte eski adresler 301 yönlendirmesiyle yeni adreslere bağlanır, SEO değeri korunur.
 
+## Kurumsal ve yasal sayfalar
+
+- [İletişim](https://taftri.com/iletisim/): Telefon, WhatsApp, e-posta, adres ve iletişim formu.
+- [Gizlilik Politikası ve KVKK Aydınlatma Metni](https://taftri.com/gizlilik-ve-kvkk/): Toplanan veriler, işleme amacı, aktarılan hizmet sağlayıcılar ve KVKK hakları.
+- [Çerez Politikası](https://taftri.com/cerez-politikasi/): Kullanılan analitik çerezler ve kapatma yolları. Zorunlu çerez ve reklam çerezi yok.
+
 ## Optional
 
 - [robots.txt](https://taftri.com/robots.txt)
