@@ -57,6 +57,17 @@ taramaya kapalıdır (robots.txt), indirme bağlantısı gönderim sonrası sayf
 - Web sitesi teklif karşılaştırma çizelgesi — yedi kalem ve sık atlanan gizli maliyetler. Sayfası: https://taftri.com/rehber/kurumsal-web-sitesi-maliyeti/
 - ACoS hedef hesap çizelgesi — ürün başına marj hesabı, başabaş ACoS ve haftalık ACoS/TACoS takibi. Sayfası: https://taftri.com/rehber/acos-nedir-kac-olmali/
 
+- [E-ticaret sitesi nasıl kurulur? Adım adım süreç](https://taftri.com/rehber/e-ticaret-sitesi-nasil-kurulur/): Platform seçiminden sanal POS'a, ürün verisinden ölçümlemeye kadar yedi adımın gerçek sırası.
+- [Sanal POS nedir, nasıl alınır?](https://taftri.com/rehber/sanal-pos-nedir-nasil-alinir/): Banka POS'u ile ödeme kuruluşu farkı, istenen belgeler, komisyon kalemleri ve ret sebepleri.
+- [Pazaryeri satıcı hesabı açmak](https://taftri.com/rehber/pazaryeri-satici-hesabi-acmak/): Trendyol, Hepsiburada ve Amazon'da belge listesi, platform farkları ve açılışta takılan noktalar.
+- [B2B ve B2C nedir? E-ticarette farkları](https://taftri.com/rehber/b2b-ve-b2c-nedir/): Fark müşteri tipinde değil sitenin mimarisinde: fiyat listesi, cari hesap, sipariş akışı.
+- [Dropshipping nedir, nasıl başlanır?](https://taftri.com/rehber/dropshipping-nedir/): Stoksuz satışın gerçek marjı, tedarikçi seçiminde bakılacaklar ve modelin atlanan riskleri.
+- [SEO nedir, nasıl yapılır?](https://taftri.com/rehber/seo-nedir-nasil-yapilir/): Üç ayak sırayla: teknik, içerik, dış sinyaller. Nereden başlanır ve ne kadar sürede sonuç verir.
+- [Sayfam neden indekslenmiyor?](https://taftri.com/rehber/sayfam-neden-indekslenmiyor/): Taranma ile indekslenme ayrı aşamalar. Sık çıkan sebepler ve çözümün doğru sırası.
+- [Backlink nedir, nasıl alınır?](https://taftri.com/rehber/backlink-nedir/): Bağlantı sayısı değil kaynağı belirleyici. Meşru yollar ve satın alınan bağlantının riski.
+- [Site hızı nasıl artırılır?](https://taftri.com/rehber/site-hizi-nasil-artirilir/): LCP, INP ve CLS neye bakar; en çok kazandıran düzeltmeler hangi sırayla yapılır.
+- [ROAS nedir, nasıl hesaplanır?](https://taftri.com/rehber/roas-nedir-nasil-hesaplanir/): Başabaş ROAS marjın tersidir. Yüksek ROAS'ın neden her zaman iyi olmadığı.
+
 ## Guides (English)
 
 - [Shopify vs Ikas vs Ticimax](https://taftri.com/en/guides/shopify-vs-ikas-vs-ticimax/): Comparison of four e-commerce platforms on cost, integrations, customization and maintenance, and which business model each fits.
