@@ -109,6 +109,14 @@ taramaya kapalıdır (robots.txt), indirme bağlantısı gönderim sonrası sayf
 - Hedef ACoS ürün marjına göre belirlenir; tek bir doğru oran yoktur.
 - Shopify'a geçişte eski adresler 301 yönlendirmesiyle yeni adreslere bağlanır, SEO değeri korunur.
 
+## Referanslar (yapılan işler)
+
+- [Tüm referanslar](https://taftri.com/referanslar/): Her sayfada kapsam, yapılan iş ve ölçülen değerler.
+- [Armada Teknoloji](https://taftri.com/referanslar/armada-teknoloji/)
+- [Ömer Has Kuyumculuk](https://taftri.com/referanslar/omer-has-kuyumculuk/)
+- [BlackBörk](https://taftri.com/referanslar/blackbork/)
+- [Aşkın Concept](https://taftri.com/referanslar/askin-concept/)
+
 ## Kurumsal ve yasal sayfalar
 
 - [İletişim](https://taftri.com/iletisim/): Telefon, WhatsApp, e-posta, adres ve iletişim formu.
